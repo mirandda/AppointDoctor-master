@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@drawable/gradient"
+    tools:context="com.projekti.projekti.DoctorInfo">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/progress_bar"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ju lutem zgjedheni se pari foton e profilit dhe username-in"
+            android:textColor="#FFF"
+            android:id="@+id/textView8" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/footojaProfilit"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="17dp"
+            android:src="@drawable/ic_menu_camera" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Uupdate"
+            android:layout_alignStart="@+id/Uupdate"
+            android:hint="Username"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF" />
+
+        <Button
+            android:id="@+id/Uupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/footojaProfilit"
+            android:layout_marginStart="48dp"
+            android:layout_toEndOf="@+id/footojaProfilit"
+            android:text="Zgjedhe" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="148dp"></LinearLayout>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etAddres"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="Emri"
+        android:inputType="textPersonName"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etAddres"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:hint="Mbiemri"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/etAddres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etPhone"
+        android:layout_alignParentStart="true"
+        android:drawableLeft="@drawable/ic_location"
+        android:ems="10"
+        android:hint="Lokacioni"
+        android:inputType="textEmailAddress"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etSpeciality"
+        android:layout_alignParentStart="true"
+        android:drawableLeft="@drawable/ic_phone"
+        android:ems="10"
+        android:hint="Telefoni"
+        android:inputType="phone"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/etSpeciality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etHospital"
+        android:layout_alignParentStart="true"
+        android:drawableLeft="@drawable/ic_speciality"
+        android:ems="10"
+        android:hint="Specializimi"
+        android:inputType="textEmailAddress"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/etHospital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etType"
+        android:layout_alignParentStart="true"
+        android:drawableLeft="@drawable/ic_hospital"
+        android:ems="10"
+        android:hint="Spitali"
+        android:inputType="textEmailAddress"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+
+    <Button
+        android:id="@+id/btnSaveInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/background_login"
+        android:text="Ruaj"
+        android:textColor="#f16f7d"
+        android:textSize="18sp" />
+
+
+    <WebView
+        android:id="@+id/wvAttribution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Attribution"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

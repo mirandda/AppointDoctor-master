@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.projekti.projekti">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".registerDoctor" />
+        <activity android:name=".registerPacient" />
+        <activity android:name=".shfaq_doktoret" />
+        <activity android:name=".DoctorInfo" />
+        <activity android:name=".Profili_pacientit" />
+        <activity android:name=".DatePicker" />
+        <activity android:name=".doctor_view" />
+        <activity android:name=".shfaq_terminet" />
+        <activity android:name=".shfaq_terminetEdoktorit" />
+        <activity android:name=".update_profile" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAaV8VE4nLsTODnmbfdtn_S9DFbcZ23hCI" />
+
+        <activity android:name=".shto_termin"></activity>
+    </application>
+
+</manifest>

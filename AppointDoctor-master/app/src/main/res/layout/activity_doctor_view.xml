@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context="com.projekti.projekti.doctor_view">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/imgProfil"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/doc" />
+
+        <TextView
+            android:id="@+id/displayDocName"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progress_bar"
+            android:layout_centerHorizontal="true"
+            android:hint="Username"
+            android:textColorHint="#FFF"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent"></LinearLayout>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+
+
+    <TextView
+        android:id="@+id/Appoint"
+        android:drawableRight="@drawable/ic_arrow"
+        android:drawableLeft="@drawable/appoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shto termin"
+        android:layout_marginTop="15dp"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/Appointments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terminet"
+        android:drawableLeft="@drawable/ic_calendar"
+        android:layout_marginTop="30dp"
+        android:drawableRight="@drawable/ic_arrow"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/Logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shkycu"
+        android:layout_marginTop="30dp"
+        android:drawableRight="@drawable/ic_arrow"
+        android:drawableLeft="@drawable/ic_exit_to_app_black_24dp"
+        android:textColor="#FFF" />
+
+
+</LinearLayout>
